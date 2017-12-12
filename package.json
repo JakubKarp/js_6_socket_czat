@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production && webpack",
+    "build": "set NODE_ENV=production && webpack",
     "start": "webpack-dev-server --inline --hot --config ./webpack.config.js"
   },
   "keywords": [],
@@ -22,6 +22,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-hot-loader": "^3.0.0",
+    "socket.io": "^2.0.4",
     "socket.io-client": "^2.0.4",
     "style-loader": "^0.19.0",
     "webpack": "^3.10.0",

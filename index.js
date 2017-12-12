@@ -28,7 +28,7 @@ io.on('connection', function(socket) {
 		});
 		//aktualizacja listy aktywnych i powiadomienie o tym innych (update aktualizuje listę uczestników czatu):
 		io.emit('update', {
-			users: userService.getAllUsers();
+			users: userService.getAllUsers()
 		});
 	});
 });
