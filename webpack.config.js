@@ -5,7 +5,7 @@ var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 var OptimizeJsPlugin = require('optimize-js-plugin');
 
 
-var env = process.env.NODE_ENV || 'development';
+var env = process.env.NODE_ENV.trim() || 'development';
 var plugins = 
 	[
 		new HtmlWebpackPlugin({
